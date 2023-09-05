@@ -3,7 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF} from '@react-three/drei'
 import CanvasLoader from '../Loader'
 
-const Computers = () => {
+const Computers = ({isMobile}) => {
   const computer = useGLTF('./desktop_pc/scene.gltf')
   
   return (
@@ -20,8 +20,8 @@ const Computers = () => {
         />
           <primitive
           object={computer.scene}
-          scale={0.75}
-          position={[0, -3.25, -1.5]}
+          scale={isMobile ? 0.7 : 0.75}
+          position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
           rotation={[-0.01, -0.2, -0.1]}
           />
     </mesh>
@@ -29,6 +29,32 @@ const Computers = () => {
 }
 
 const ComputersCanvas = () => {
+      // Declare a state variable 'isMobile' and its updater function 'setIsMobile'
+    const [isMobile, setIsMobile] = useState();
+
+    // Set up an effect that runs after the component mounts
+    useEffect(() => {
+      // Create a media query to match viewport widths up to 500px
+      const mediaQuery = window.matchMedia('(max-width: 500px)');
+
+      // Initialize 'isMobile' based on the current media query match status
+      setIsMobile(mediaQuery.matches);
+
+      // Define a function to handle changes in the media query match status
+      const handleMediaQueryChange = (event) => {
+        // Update 'isMobile' based on the new match status
+        setIsMobile(event.matches);
+      };
+
+      // Add an event listener for the 'change' event of the media query
+      mediaQuery.addEventListener('change', handleMediaQueryChange);
+
+      // Return a cleanup function to remove the event listener
+      return () => {
+        mediaQuery.removeEventListener('change', handleMediaQueryChange);
+      };
+    }, []); // Empty dependency array ensures the effect runs only once after mount
+
   return (
     <Canvas
     freamLoop="demand"
@@ -42,7 +68,7 @@ const ComputersCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minAzimuthAngle={Math.PI / 2}
         />
-        <Computers />
+        <Computers isMobile={isMobile}/>
       </Suspense>
 
       <Preload all/>
