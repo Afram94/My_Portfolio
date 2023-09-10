@@ -22,7 +22,7 @@ const Navbar = () => {
         <p className='text-white text-[18px] font-bold cursor-pointer flex'>
           Afram &nbsp;
           <span className='sm:block hidden'>
-           | JS Mastery</span>
+           | Portfolio</span>
         </p>
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
