@@ -6,6 +6,11 @@ import { styles } from "../styles";
 import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from "../utils/motion";
+import Swal from "sweetalert2";
+
+/* cGXrkOMLgz0SU7NMB */
+/* template_p43ma59 */
+/* service_wxamatd */
 
 const Contact = () => {
   const formRef = useRef();
@@ -17,9 +22,56 @@ const Contact = () => {
 
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {}
+  const handleChange = (e) => {
+    const { name, value } = e.target;
 
-  const handleSubmit = (e) => {}
+    setForm({...form, [name]: value });
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    setLoading(true);
+
+    emailjs.send(
+      'service_mkkycgm',
+      'template_p43ma59',
+     {
+      from_name: form.name,
+      to_name: "Afram H",
+      from_email: "afram.h@hotmail.com",
+      to_email: form.email,
+      message: form.message,
+     },
+    'cGXrkOMLgz0SU7NMB')
+
+    .then((result) => {
+      setLoading(false);
+
+      Swal.fire(
+        'Thank you for contacting me!',
+        'I will get back to you as soon as possible.',
+        'success'
+      )
+      /* alert("Thank you for contacting me. I will get back to you as soon as possible."); */
+      setForm({
+        name: '',
+        email: '',
+        message: '',
+      });
+      }, (error) => {
+        setLoading(false);
+        console.log(error);
+
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Something went wrong! Please try again later.',
+          /* footer: '<a href="">Why do I have this issue?</a>' */
+        })
+        /* alert("There was an error sending your message. Please try again later."); */
+      });
+  }
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
