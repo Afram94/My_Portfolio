@@ -19,6 +19,9 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
+import nextjs from "./tech/nextjs.png";
+import laravel from "./tech/laravel.png";
+import mysql_logo from "./tech/mysql_logo.svg";
 import threejs from "./tech/threejs.svg";
 
 import meta from "./company/meta.png";
@@ -59,4 +62,7 @@ export {
   carrent,
   jobit,
   tripguide,
+  nextjs,
+  laravel,
+  mysql_logo,
 };

@@ -27,6 +27,12 @@ const ExperienceCard = ({ experiences }) => (
         <h3 className="text-white text-[24px] font-bold">
           {experiences.title}
         </h3>
+        <h3 className="text-white text-[17px] font-semibold my-2">
+          {experiences.position}
+        </h3>
+        {/* <h3 className="text-white text-[16px] font-semibold ">
+          Project Name: {experiences.project_name}
+        </h3> */}
         <p className="text-secondary text-[16px] font-semibold" style={{margin: 0}}>
           {experiences.company_name}
         </p>

@@ -23,6 +23,10 @@ import {
     jobit,
     tripguide,
     threejs,
+    nextjs,
+    laravel,
+    
+    mysql_logo,
   } from "../assets";
   
   export const navLinks = [
@@ -46,12 +50,20 @@ import {
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "React Developer",
       icon: mobile,
     },
     {
-      title: "Backend Developer",
+      title: "Frontend Developer",
+      icon: creator,
+    },
+    {
+      title: "backend Developer",
       icon: backend,
+    },
+    {
+      title: "Next.js developer",
+      icon: web,
     },
     {
       title: "Content Creator",
@@ -80,26 +92,34 @@ import {
       name: "React JS",
       icon: reactjs,
     },
-    {
+    /* {
       name: "Redux Toolkit",
       icon: redux,
-    },
+    }, */
     {
       name: "Tailwind CSS",
       icon: tailwind,
     },
-    {
+    /* {
       name: "Node JS",
       icon: nodejs,
-    },
+    }, */
     {
       name: "MongoDB",
       icon: mongodb,
     },
     {
+      name: "laravel",
+      icon: laravel,
+    },
+    {
+      name: "mysql_logo",
+      icon: mysql_logo,
+    },
+    /* {
       name: "Three JS",
       icon: threejs,
-    },
+    }, */
     {
       name: "git",
       icon: git,
@@ -109,62 +129,65 @@ import {
       icon: figma,
     },
     {
-      name: "docker",
-      icon: docker,
+      name: "nextjs",
+      icon: nextjs,
     },
   ];
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
+      title: "Laravel PHP - Vue.js - Tailwind CSS",
+      position: "Frontend Developer with Backend Contributions",
+      /* project_name: "Brinto Booking", */
+      company_name: "Smart Cash AB - Brinto Booking",
       icon: starbucks,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "March 2021 - January 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Developed and maintained optimized user interfaces using Vue.js, improving user interaction and experience.",
+        "Contributed to backend functionalities using Laravel, optimizing the overall application efficiency.",
+        "Played a key role in integrating Fortnox for streamlined invoice generation.",
+        "Implemented an in-built Trello board for effective task and errand management.",
+        "Gained hands-on experience in deploying applications on AWS, focusing on scalability and performance.",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
+      title: "Laravel PHP - Vue.js - Tailwind CSS",
+      position: "Solo Full-stack Web Developer",
+      company_name: "Smart Cash AB - Botnova",
       icon: tesla,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "August 2021 - April 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Led the full-stack development, gaining proficiency in both Vue.js and Laravel.",
+        "Enhanced the cohesiveness and functionality of designs utilizing Tailwind CSS.",
+        "Handled secure customer data storage and tracked product ownership efficiently.",
+        "Managed inventory and streamlined various functions in both frontend and backend of the application.",
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
+      title: "Django - React.js - Tailwind CSS",
+      position: "Front End Developer (Team Role)",
+      company_name: "Smart Cash AB - BrintoPay",
       icon: shopify,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "May 2022 - Sep 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Played a pivotal role in designing an ordering platform using React.js, facilitating both dine-in and delivery options and significantly enhancing user experience.",
+        "Worked collaboratively with a cross-functional team to deliver a system that enables efficient order management for restaurants, improving service speed and precision.",
+        "Refined visual aesthetics and interface responsiveness using Tailwind CSS, contributing to the overall improvement of the platform's design.",
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
+      title: "React.js - Figma - Tailwind CSS",
+      position: "Solo Frontend Web Developer",
+      company_name: "Smart Cash AB - Smart Cash Website",
       icon: meta,
       iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      date: "February 2023 - May 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Spearheaded the development of a mobile-responsive company website using React.js, significantly improving proficiency in the technology.",
+        "Collaborated closely with the design team using Figma, enhancing interface design and user experience through Tailwind CSS.",
       ],
     },
   ];
