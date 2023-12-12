@@ -25,8 +25,10 @@ import {
     threejs,
     nextjs,
     laravel,
-    
     mysql_logo,
+    pic,
+    smartcash,
+    crm,
   } from "../assets";
   
   export const navLinks = [
@@ -140,7 +142,7 @@ import {
       position: "Frontend Developer with Backend Contributions",
       /* project_name: "Brinto Booking", */
       company_name: "Smart Cash AB - Brinto Booking",
-      icon: starbucks,
+      icon: pic,
       iconBg: "#383E56",
       date: "March 2021 - January 2022",
       points: [
@@ -155,7 +157,7 @@ import {
       title: "Laravel PHP - Vue.js - Tailwind CSS",
       position: "Solo Full-stack Web Developer",
       company_name: "Smart Cash AB - Botnova",
-      icon: tesla,
+      icon: pic,
       iconBg: "#E6DEDD",
       date: "August 2021 - April 2022",
       points: [
@@ -169,7 +171,7 @@ import {
       title: "Django - React.js - Tailwind CSS",
       position: "Front End Developer (Team Role)",
       company_name: "Smart Cash AB - BrintoPay",
-      icon: shopify,
+      icon: pic,
       iconBg: "#383E56",
       date: "May 2022 - Sep 2023",
       points: [
@@ -182,7 +184,7 @@ import {
       title: "React.js - Figma - Tailwind CSS",
       position: "Solo Frontend Web Developer",
       company_name: "Smart Cash AB - Smart Cash Website",
-      icon: meta,
+      icon: pic,
       iconBg: "#E6DEDD",
       date: "February 2023 - May 2023",
       points: [
@@ -220,69 +222,88 @@ import {
   ];
   
   const projects = [
+
+    {
+      name: "CRM Web-App",
+      description:
+        "A CRM application integrates Websockets for real-time updates, enhancing user interaction and data accuracy. A sophisticated permissions system safeguards data integrity, while custom fields offer tailored data management to fit diverse business needs. This tool excels in managing customer relationships and inventory, providing comprehensive insights for business optimization.",
+      tags: [
+        {
+          name: "Laravel PHP",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Tailwind",
+          color: "green-text-gradient",
+        },
+        {
+          name: "TypeScript",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "RESTful API",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "OAuth 2.0",
+          color: "green-text-gradient",
+        },
+        {
+          name: "MySQL",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: crm,
+      source_code_link: "https://github.com/Afram94/CRM-WebApp",
+    },
+    {
+      name: "Smart Cash Website",
+      description:
+        "I developed a company website with a focus on excellent UI and UX, making it easy and enjoyable for customers to browse products and contact the company for inquiries or purchases. The clean, intuitive design enhances the overall customer experience, facilitating straightforward product selection and efficient communication.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Tailwind",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Amplify",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: smartcash,
+      source_code_link: "https://www.smartcash.se/",
+    },
+
     {
       name: "Car Rent",
       description:
         "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
       tags: [
         {
-          name: "react",
+          name: "Next.js",
           color: "blue-text-gradient",
-        },
-        {
-          name: "mongodb",
-          color: "green-text-gradient",
         },
         {
           name: "tailwind",
           color: "pink-text-gradient",
         },
+        {
+          name: "TypeScript",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Amplify",
+          color: "pink-text-gradient",
+        },
       ],
       image: carrent,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/Afram94/car_showcase",
     },
-    {
-      name: "Job IT",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
-    },
+
   ];
   
   export { services, technologies, experiences, testimonials, projects };

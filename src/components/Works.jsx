@@ -63,15 +63,14 @@ const Works = () => {
         </h2>
       </motion.div>
 
-      <div className="w-full flex">
+      <div className="w-full flex flex-col">
         <motion.p variants={fadeIn("", "", 0.1, 1)}
-        className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mollis neque non hendrerit pellentesque. Sed maximus,
-          orci id pharetra rhoncus, enim tortor dictum leo, vel lacinia arcu purus sit amet nisi. In imperdiet,
-          lorem non vulputate faucibus, lectus felis congue urna, vitae vulputate mi justo convallis nisi.
-          Sed consequat tempus fringilla. Nam vehicula metus non hendrerit ornare. Etiam aliquet vel nisl at venenatis.
+          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]">
+          In this section, I present a collection of projects that have been both a workshop for refining my skills and a source of immense enjoyment. Each endeavor, from the streamlined processes of the CRM Web-App to the user-friendly Smart Cash Website, and the convenient Car Rent platform, has been a valuable lesson in technology and problem-solving. They stand as milestones in my continuous learning journey, where the joy of building solutions and the satisfaction of overcoming challenges go hand in hand.
         </motion.p>
+        <p className="text-red-300 mt-12">More projects are on the way and will be featured soon.....</p>
       </div>
+
 
       <div className="mt-20 flex flex-wrap gap-7">
         {projects.map((project, index) => (

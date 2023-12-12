@@ -28,10 +28,13 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import pic from "./company/pic.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import smartcash from "./smartcash.png";
+import crm from "./crm.png";
 
 export {
   logo,
@@ -65,4 +68,7 @@ export {
   nextjs,
   laravel,
   mysql_logo,
+  pic,
+  smartcash,
+  crm,
 };

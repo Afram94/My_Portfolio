@@ -37,9 +37,14 @@ const About = () => {
       </motion.div>
 
       <motion.p variants={fadeIn("", "", 0.1, 1)} className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
-        Jag är på jakt efter en ny position, med särskilt fokus på frontend-utveckling. Under min karriär har jag skaffat mig värdefull erfarenhet av att arbeta med Vue.js, React.js och Laravel PHP. <br/>
-        Medan jag känner en särskild passion för frontend-utveckling, vill jag även framhäva att jag är öppen för fullstack- eller backend-positioner.
-        <br/> Jag är angelägen om att utnyttja mina kunskaper på bästa möjliga sätt och fortsätta att växa inom teknikområdet.<br/>
+      I am actively seeking a new position where I can excel primarily in frontend development. Alongside my proficiency in frontend technologies, I am also capable and interested in backend and full-stack roles, ready to contribute comprehensively to web development projects.<br/>
+         Throughout my career, I have gained valuable experience working with Vue.js, React.js, and Laravel PHP.  <br/>
+        While I have a special passion for frontend development, I also want to emphasize that I am open to full-stack or backend positions.
+        <br/> I am eager to utilize my skills in the best possible way and continue to grow in the technology field.<br/>
+        <a href="/Afram_Hanna_CV.pdf" download="Afram_Hanna_CV.pdf" className="mt-4 text-white underline">
+          Download My CV
+        </a>
+
       </motion.p>
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
